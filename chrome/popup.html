@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Glitterific</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="logo">Glitterific</p>
+    <p class="sub">Hate Mail Translator</p>
+  </header>
+
+  <p class="count" id="count">Checking this page…</p>
+
+  <label class="row">
+    <span>
+      <strong>Glitter my mail</strong>
+      <small>Swap hostile words for sparkly ones</small>
+    </span>
+    <input type="checkbox" id="enabled" class="switch">
+  </label>
+
+  <label class="row">
+    <span>
+      <strong>Show what they said</strong>
+      <small>Keep the original words, struck through</small>
+    </span>
+    <input type="checkbox" id="showOriginals" class="switch">
+  </label>
+
+  <button id="glitterPage" type="button">Glitter this page</button>
+  <p class="hint">Works on any site, like a comments section. Gmail and Outlook glitter on their own.</p>
+
+  <p class="safety">If a message looks like a threat, Glitterific leaves it exactly as it was sent, so you can save it and report it. <a href="https://righttobe.org/guides/responding-to-online-harassment/" target="_blank" rel="noopener noreferrer">Get support from Right To Be</a></p>
+
+  <footer>
+    Revived in 2026 by <a href="https://melissapierce.com" target="_blank" rel="noopener noreferrer">Melissa Pierce</a>, built with Claude. Inspired by Danielle Sucher's Jailbreak the Patriarchy. Everything runs in your browser. Nothing you read leaves it.
+  </footer>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

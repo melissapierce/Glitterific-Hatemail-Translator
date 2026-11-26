@@ -1,0 +1,63 @@
+/* Glitterific: styles added to the pages it glitters */
+
+.glitterific-word {
+  cursor: pointer;
+}
+
+.glitterific-new {
+  padding: 0 0.22em;
+  border-radius: 0.35em;
+  background-color: #ffe27a;
+  background-image: linear-gradient(90deg, #ffe27a 0%, #ffb3e1 50%, #ffe27a 100%);
+  background-size: 200% 100%;
+  color: #5b1a7a !important;
+  font-weight: 600;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-position 0.6s ease;
+}
+
+.glitterific-word:hover .glitterific-new {
+  background-position: 100% 0;
+}
+
+/* "Show what they said": the original word, struck through, before the glitter */
+.glitterific-show-originals .glitterific-word::before,
+.glitterific-word.glitterific-peek::before {
+  content: attr(data-original);
+  margin-right: 0.3em;
+  color: inherit;
+  opacity: 0.6;
+  text-decoration: line-through;
+  text-decoration-color: #c2378f;
+  text-decoration-thickness: 2px;
+}
+
+/* The note on messages that may contain a threat */
+.glitterific-flag {
+  display: block;
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border: 1px solid #e0b9d3;
+  border-radius: 10px;
+  background: #fbeff7;
+  color: #3d1450;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.glitterific-flag-star {
+  margin-right: 6px;
+  color: #c2378f;
+}
+
+.glitterific-flag a {
+  color: #8a2b6b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitterific-new {
+    transition: none;
+  }
+}
